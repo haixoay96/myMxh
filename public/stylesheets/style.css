@@ -1,0 +1,126 @@
+body{
+    background-image: url('/images/background.jpg');
+}
+.center {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+.popup-head{
+    height: 30px;
+}
+
+.send{
+    width: 100%;
+    padding: 5px;
+}
+
+
+.users {
+    position: static;
+    background-color: white;
+    height: 42.5%;
+    width: 100%;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: blue;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.rooms {
+    position: static;
+    background-color: white;
+    height: 42.5%;
+    width: 100%;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: blue;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.listContact {
+    position: fixed;
+    left: 80%;
+    top: 0px;
+    height: 100%;
+    width: 20%;
+
+}
+.box {
+    position: fixed;
+    bottom: 0px;
+    right: 20%;
+    height: 285px;
+    background-color: rgb(237, 239, 244);
+    width: 300px;
+    border: 1px solid rgba(29, 49, 91, .3);
+}
+.header{
+    height: 5%;
+    background: blue;
+}
+.roomchat{
+    width: 80%;
+    height: 100%;
+    position: fixed;
+
+}
+.history{
+    margin-top: 20px;
+    overflow: auto;
+    overflow-x: hidden;
+    height: 70%;
+    width: 80%;
+    background: white;
+}
+.input{
+    width: 80%;
+}
+.create{
+    width: 100%;
+}
+.roomcreate:hover .nameroom{
+    display: block;
+}
+.nameroom{
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    display: none;
+}
+.typeahead{
+    width: 80%;
+    right: auto;
+    top: 0px;
+    position: absolute;;
+}
+#input-typeahead{
+    width: 200px;
+    height: 20px;
+}
+.auto{
+    display: inline-block;
+}
+.auto:hover .list{
+    display: block;
+}
+.list {
+    position: absolute;
+    display: none;
+}
+.list .list-group-item{
+    width: 200px;
+}
+.item{
+    width: 100%;
+}
+.head{
+        height: 40px;
+}
+.space{
+    height: 70%;
+}
+.list-group-item{
+    position:static;
+}

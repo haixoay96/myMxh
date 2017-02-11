@@ -1,0 +1,128 @@
+.box_ {
+    display: inline-block;
+    height: 330px;
+    width: 270px;
+    float: right;
+    margin: 10px 10px 0px 10px;
+    background: white;
+}
+
+.head_ {
+    position: relative;
+    font-size: 14px;
+    color: #0c0c0c;
+    background: #6D84FF;
+    padding: 2px;
+}
+
+.content_ {
+    height: 240px;
+    padding-top: 100px;
+    overflow-y: scroll;
+}
+.send_{
+}
+
+.listmessage {}
+
+.chat_ {
+    display: inline;
+    margin: auto;
+    position: fixed;
+    bottom: 0px;
+    right: 20%;
+}
+
+.spanname {
+    margin: 2px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.spanremove {
+    margin: 2px;
+    float: right;
+}
+
+.spanplus {
+    margin: 2px;
+    float: right;
+}
+
+.spanmessage {
+    word-wrap: break-word;
+}
+.divsend {
+    font-size: 15px;
+    color: white;
+    border-radius: 10px;
+    background: blue;
+    margin: 5px 10px 5px 5px;
+    padding: 5px;
+    max-width: 80%;
+    float: right;
+    clear: both;
+}
+
+.divreceive {
+    font-size: 15px;
+    color: #0e0e0e;
+    border-radius: 10px;
+    background: #e2dede;
+    margin: 0px 5px 5px 10px;
+    padding: 5px;
+    max-width: 80%;
+    float: left;
+    clear: both;
+}
+.datere{
+    font-size: 7px;
+    float:left;
+    margin: 5px 5px 5px 10px;
+    clear: both;
+}
+.datese{
+    font-size: 7px;
+    float:right;
+    margin: 5px 10px 5px 10px;
+    clear: both;
+}
+.ownmessage{
+    font-size: 10px;
+    float:left;
+    margin: 5px 5px 0px 10px;
+    clear: both;
+}
+.inputcontentsend {
+    border: 0px;
+}
+.addsend{
+    padding: 2px;
+}
+.fa-2 {
+    font-size: 1.5em;
+}
+
+.emotion{
+   display: none;
+   position: absolute;
+   bottom: 100px;
+   left: -50px;
+}
+.emotion td {
+    text-align: center;
+    background: white;
+    width: 30px;
+}
+.emotion tr{
+    padding: 1px;
+    height: 30px;
+}
+.emotion img{
+    padding: 2px;
+    width: 100%;
+}
+.emotion tbody{
+    padding: 10px;
+}
