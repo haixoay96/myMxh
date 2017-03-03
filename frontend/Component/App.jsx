@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import UserList from './UserList.jsx';
 import RoomList from './RoomList.jsx';
+import Home from './Home.jsx';
 import Bar from './Bar.jsx';
 import ListChatCurrent from './ListChatCurrent.jsx';
 import Store from './Store.jsx';
@@ -44,13 +45,12 @@ class App extends React.Component {
                     <li className='list-group-item list-group-item-info' style={{height:'5%'}}>
                         List User</li>
                     <UserList/>
-                     <li className='list-group-item list-group-item-info' style={{height:'5%'}}>
-                        <input type='text' placeholder='Type a room!'onChange={this.onChange} ref='nameroom'/>
-                        <input type='button' value='Tạo' onClick={this.onClick}/>
-                     </li>
                     <li className='list-group-item list-group-item-info' style={{height:'5%'}}>
                         List Room</li>
                     <RoomList/>
+                </div>
+                <div className='home'>
+                    <Home/>
                 </div>
                 <div className='chat_' id='box'>
                     <ListChatCurrent/>

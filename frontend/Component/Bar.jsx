@@ -6,7 +6,7 @@ class Bar extends React.Component {
             <nav className="navbar navbar-inverse">
                 <div className="container-fluid">
                     <div className="navbar-header">
-                        <a className="navbar-brand" href="#">Web chat!</a>
+                        <a className="navbar-brand" href="#">Ketket!</a>
                     </div>
                 </div>
             </nav>

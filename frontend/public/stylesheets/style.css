@@ -124,3 +124,10 @@ body{
 .list-group-item{
     position:static;
 }
+.home{
+    margin-left: 20%;
+    width: 40%;
+    background: #fff;
+    overflow: auto;
+    overflow-x: hidden;
+}
