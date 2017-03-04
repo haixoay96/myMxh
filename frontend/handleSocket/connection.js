@@ -12,6 +12,7 @@ var handlePullListUser = require('./pullListUser.js').handlePullListUser;
 var handlePullListRoom = require('./pullListRoom.js').handlePullListRoom;
 var handleConnection = (io) => {
     io.on('connection', (socket) => {
+        console.log('Co nguoi connect!');
         handleLogin(socket);
         handleSendMessage(socket);
         handlePullListMessage(socket);
