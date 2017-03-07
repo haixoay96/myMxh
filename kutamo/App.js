@@ -48,7 +48,7 @@ export default class App extends Component {
     console.log('Render!');
     return (<Navigator
       initialRoute={{
-      name: 'login'
+      name: 'home'
     }}
       renderScene={this.renderScene}/>);
   }

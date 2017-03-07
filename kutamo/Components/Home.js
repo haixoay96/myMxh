@@ -19,7 +19,7 @@ class Home extends Component{
         return(
             <Drawer
                 ref='drawer'
-                drawerWidth={width-20}
+                drawerWidth={width-10}
                 easingFunc={Easing.ease}
                 customStyles={{
                     drawer: {

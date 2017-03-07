@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {AppRegistry, ListView, View, Dimensions,Text, StyleSheet, TextInput} from 'react-native'
+import {AppRegistry, ListView, View, Dimensions,Text, StyleSheet,Image ,TextInput} from 'react-native'
 var width = Dimensions
     .get('window')
     .width;
@@ -11,31 +11,31 @@ const rows = {
     'Bạn bè': [
         {
             id: 0,
-            text: 'View'
+            text: 'Nguyễn Đức Linh'
         }, {
             id: 1,
-            text: 'Text'
+            text: 'Nguyễn Quang Tuấn'
         }, {
             id: 2,
-            text: 'Image'
+            text: 'Nguyễn Văn Sơn'
         }, {
             id: 4,
-            text: 'View'
+            text: 'Nguyễn Việt Tiến'
         }, {
             id: 5,
-            text: 'Text'
+            text: 'Nguyễn Huy Hùng'
         }, {
             id: 6,
-            text: 'Image'
+            text: 'Chí phèo'
         }, {
             id: 7,
-            text: 'View'
+            text: 'Tiểu nhị'
         }, {
             id: 8,
-            text: 'Text'
+            text: 'Hoàng Hậu'
         }, {
             id: 9,
-            text: 'Image'
+            text: 'Tiền tỷ'
         }
     ],
     'Nhóm': [
@@ -85,9 +85,27 @@ class ContentDrawerHome extends Component {
 
     renderRow = (rowData, sectionId) => {
         return (
-            <Text style={styles.row}>
-                {rowData.text}
-            </Text>
+            <View 
+                style={{
+                    flexDirection: 'row',
+                    alignItems:'center',
+                    backgroundColor:'#343d56',
+                    marginBottom:0.2,
+                    padding:5
+                }}>
+                <Image source={require('../test.jpg')} 
+                        style={{
+                            width:50,
+                            height:50,
+                            marginRight:5
+                        }}
+                        resizeMode='cover'
+                />
+                <Text style={{
+                    color:'#ffffff',
+                    fontWeight:'bold'
+                }}>{rowData.text}</Text>
+            </View>
         )
     }
 

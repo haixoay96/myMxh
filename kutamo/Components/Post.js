@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import {View, Image, Dimensions} from 'react-native';
-import {Lightbox} from '@shoutem/ui';
+import {View, Image, Dimensions, ScrollView} from 'react-native';
+//import {Lightbox} from '@shoutem/ui';
 import Modal from 'react-native-modalbox';
+import Lightbox from 'react-native-lightbox';
 import {
     Container,
     Content,
@@ -24,10 +25,12 @@ var height = Dimensions
 class Post extends Component {
     constructor(props) {
         super(props);
-        this.onPress = this.onPress.bind(this);
     }
-    onPress(){
-        this.refs.open.open();
+    onOpen = ()=>{
+
+    }
+    onClose = ()=>{
+        
     }
     render() {
         return (
@@ -46,23 +49,22 @@ class Post extends Component {
                     </Left>
                 </CardItem>
                 <CardItem cardBody>
-                    <Image 
-                        resizeMode="contain"
-                        style={{
-                        justifyContent: 'center',
-                        alignSelf: 'center',
-                        width: width,
-                        height: 300
-                    }}
-                        source={{
-                        uri: 'http://192.168.1.27:3000/images/logo.jpg'
-                    }}/>
-                    <Modal style={[{
-                        width:width,
-                        height:height
-                    }]} ref='open'>
-                        <Text>Hello</Text>
-                    </Modal>
+                    <Lightbox
+                        onOpen={this.onOpen}
+                        onClose={this.onClose}
+                    >
+                        <View>
+                            <ScrollView>
+                                 <Image
+                                    resizeMode='contain'
+                                      style={{
+                                    width:width,
+                                    height:300
+                                }}
+                                source={require('../test.jpg')}/>
+                            </ScrollView>
+                        </View>
+                    </Lightbox>
                 </CardItem>
                 <CardItem content>
                     <Text>What's your name? I'm Linh!</Text>
