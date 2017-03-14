@@ -22,16 +22,13 @@ var width = Dimensions
 var height = Dimensions
     .get('window')
     .height;
+console.log(require('../test.jpg'));
 class Post extends Component {
     constructor(props) {
         super(props);
     }
-    onOpen = ()=>{
-
-    }
-    onClose = ()=>{
-        
-    }
+    onOpen = () => {}
+    onClose = () => {}
     render() {
         return (
             <Card>
@@ -48,24 +45,24 @@ class Post extends Component {
                         </Body>
                     </Left>
                 </CardItem>
-                <CardItem cardBody>
-                    <Lightbox
-                        onOpen={this.onOpen}
-                        onClose={this.onClose}
-                    >
-                        <View>
-                            <ScrollView>
-                                 <Image
-                                    resizeMode='contain'
-                                      style={{
-                                    width:width,
-                                    height:300
-                                }}
-                                source={require('../test.jpg')}/>
-                            </ScrollView>
-                        </View>
+                <View style={{
+                    alignItems:'center',
+                    justifyContent:'center'
+                }}>
+                    <Lightbox activeProps={{
+                        width:width
+                    }}>
+                        <Image
+                        resizeMode='contain'
+                        style={{
+                        height: 300,
+                        width:width-50,
+                        backgroundColor:'#654433'                        
+                    }}
+                        source={require('../test.jpg')}/>
+
                     </Lightbox>
-                </CardItem>
+                </View>
                 <CardItem content>
                     <Text>What's your name? I'm Linh!</Text>
                 </CardItem>

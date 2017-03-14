@@ -30,7 +30,7 @@ const rows = [
 ];
 // Row comparison function
 const rowHasChanged = (r1, r2) => r1.id !== r2.id
-
+//
 // DataSource template object
 const ds = new ListView.DataSource({rowHasChanged})
 var dataSource = ds.cloneWithRows(rows)

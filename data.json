@@ -1,0 +1,19 @@
+{
+    "lessions":[
+        {
+            "name": "Ten lession",
+            "words": [
+                {
+                    "name": "Te tu",
+                    "phiên âm": "is'tæbliʃ",
+                    "Giải thích": "to start or create an organization, a system",
+                    "Từ loại": "(v): thiết lập, thành lập; xác minh, chứng minh, củng cố",
+                    "Ví dụ": "The merger of the two company established a powerful new corporation",
+                    "Nghĩa":"Sự liên kết giữa 2 công ty tạo nên một tập đoàn kinh tế hùng mạnh.",
+                    "image": "link",
+                    "audio": "link"
+                }
+            ]
+        }
+    ]
+}
