@@ -22,6 +22,8 @@ class Login extends React.Component {
         this.passsword = '';
     }
     login = async(events) => {
+        this.props.navigator.push({name: 'home'});
+        return;
         let username = this.username;
         let passsword = this.passsword;
         try {

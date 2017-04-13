@@ -103,8 +103,9 @@ class ListViewFriend extends React.Component {
                 flexDirection: 'row',
                 alignItems: 'center',
                 backgroundColor: '#343d56',
-                marginBottom: 0.2,
-                padding: 5
+                padding: 5,
+                borderColor:'#ffffff',
+                borderWidth:0.3
             }}>
                 <Image source={require('../../../test.jpg')} style={{
                     width: 50,
@@ -124,7 +125,8 @@ class ListViewFriend extends React.Component {
 }
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        backgroundColor:'#ffffff'
     },
     row: {
         padding: 15,
